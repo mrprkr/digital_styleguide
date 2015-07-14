@@ -32,7 +32,7 @@ h2 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-bottom: 0.5em;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 }
 
 h3 {
@@ -73,7 +73,10 @@ a:hover {
 
 .quick-link {
 	display: block;
-	padding: 30px;
+	max-width: 300px;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	background-color: #0d2a4a;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -93,16 +96,7 @@ a:hover {
 	text-transform: uppercase;
 	line-height: 1.2em;
 	margin-bottom: 1em;
-}
-
-.quick-link .breadcrumb a {
-	color: inherit;
-	text-decoration: none;
-	border-bottom: 1px solid #ccc;
-}
-
-.quick-link .breadcrumb a:hover {
-	opacity: 0.8;
+	letter-spacing: 0.15px;
 }
 
 .quick-link p {
@@ -110,3 +104,62 @@ a:hover {
 	font-size: 13px;
 	line-height: 1.4em;
 }
+
+
+/*LISTS*/
+li {
+	color: #636363;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.4em;
+	margin-bottom: 0.1em;
+	margin-left: 1.5em;
+}
+
+ul {
+	margin-bottom: 1em;
+}
+
+ol {
+	margin-bottom: 1em;
+}
+
+ul li {
+
+}
+
+ol li {
+
+}
+
+
+/*TABLES*/
+table {
+	width: 100%;
+	min-width: 400px;
+	table-layout: fixed;
+	display: table;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #dbe6f2;
+	color: #0d2a4a ;
+	padding: 10px;
+	font-weight: 500;
+	min-width: 120px;
+}
+
+td {
+	color: #636363;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.2em;
+	padding: 15px;
+	vertical-align: top;
+}
+
+tr:nth-child(odd) {
+	background-color: #eeeeee;
+}
+
