@@ -78,6 +78,50 @@ a:hover {
 	opacity: 0.8;
 }
 
+/*BREADCRUMB*/
+.breadcrumb {
+	color: #636363;
+	height: 40px;
+	display: block;
+	border-bottom: none;
+	font-size: 13px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.breadcrumb a {
+	color: inherit;
+	border-bottom: none;
+	font-size: 13px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.chevron::before {
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	content: '';
+	display: inline-block;
+	height: 15px;
+	position: relative;
+	top: 12px;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 15px;
+}
+
+.chevron.right:before {
+	left: 0px;
+	transform: rotate(45deg);
+	margin-right: 7px;
+}
+
+.chevron.left:before {
+	right: 0px;
+	margin-left: 7px;
+	transform: rotate(-135deg);
+}
 
 /*QUICK LINKS*/
 .quick-link {
