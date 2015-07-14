@@ -148,6 +148,7 @@ th {
 	padding: 10px;
 	font-weight: 500;
 	min-width: 120px;
+	border: 1px solid #fff;
 }
 
 td {
@@ -157,6 +158,7 @@ td {
 	line-height: 1.2em;
 	padding: 15px;
 	vertical-align: top;
+	border: 1px solid #fff;
 }
 
 tr:nth-child(odd) {
