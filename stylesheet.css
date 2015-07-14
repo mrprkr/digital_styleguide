@@ -1,11 +1,24 @@
+/*CSS for count styleguide 
+Parker @ WILSON FLETCHER 2015
+*/
+
+/*STRUCTURE*/
 .container {
-	max-width: 500px;
-	margin-left: 100px;
-	margin-top: 100px;
+	max-width: 690px;
+	padding: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .spacer {
 	height: 300px;
+}
+
+
+/*TYPOGRAPHY*/
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
 }
 
 * {
@@ -26,14 +39,15 @@ h2 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-bottom: 0.5em;
+	/*text-transform: capitalize;*/
 }
 
 h3 {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 1.4em;
-	margin-top: 0.8em;
-	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	color: #636363;
 	letter-spacing: 0.2px;
 }
@@ -43,14 +57,119 @@ h4 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-top: 2em;
-	margin-bottom: 1em;
+	margin-bottom: 0.6em;
 }
 
 p {
-	color: #111111;
+	color: #636363;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.4em;
-	letter-spacing: 0.1px;
 	margin-bottom: 0.5em;
 }
+
+a {
+	color: #ed7002;
+	text-decoration: none;
+	border-bottom: 2px solid #ed7002;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+
+/*QUICK LINKS*/
+.quick-link {
+	display: block;
+	max-width: 300px;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #0d2a4a;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.quick-link h2 {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin-bottom: 0px;
+}
+
+.quick-link .breadcrumb {
+	color: #cccccc;
+	font-size: 10px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+	letter-spacing: 0.15px;
+}
+
+.quick-link p {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+
+/*LISTS*/
+li {
+	color: #636363;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.4em;
+	margin-bottom: 0.1em;
+	margin-left: 1.5em;
+}
+
+ul {
+	margin-bottom: 1em;
+}
+
+ol {
+	margin-bottom: 1em;
+}
+
+ul li {
+
+}
+
+ol li {
+
+}
+
+
+/*TABLES*/
+table {
+	width: 100%;
+	min-width: 400px;
+	table-layout: fixed;
+	display: table;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #dbe6f2;
+	color: #0d2a4a ;
+	padding: 10px;
+	font-weight: 500;
+	border: 1px solid #fff;
+}
+
+td {
+	color: #636363;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.2em;
+	padding: 15px;
+	vertical-align: top;
+	border: 1px solid #fff;
+}
+
+tr:nth-child(odd) {
+	background-color: #eeeeee;
+}
+
