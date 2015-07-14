@@ -39,7 +39,6 @@ h2 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-bottom: 0.5em;
-	/*text-transform: capitalize;*/
 }
 
 h3 {
@@ -126,7 +125,7 @@ a:hover {
 /*QUICK LINKS*/
 .quick-link {
 	display: block;
-	max-width: 300px;
+	max-width: 320px;
 	padding: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -139,17 +138,18 @@ a:hover {
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	margin-bottom: 0px;
 }
 
-.quick-link .breadcrumb {
+.quick-link .ql-breadcrumb {
 	color: #cccccc;
-	font-size: 10px;
+	font-size: 11px;
 	text-transform: uppercase;
-	line-height: 1.2em;
-	margin-bottom: 1em;
+	line-height: 1.4em;
+	margin-bottom: 0.8em;
 	letter-spacing: 0.15px;
+	font-weight: 500;
 }
 
 .quick-link p {
@@ -168,23 +168,26 @@ li {
 	margin-bottom: 0.1em;
 	margin-left: 1.5em;
 }
-
+/*unordered lists*/
 ul {
 	margin-bottom: 1em;
 }
-
+ul ul li{
+	margin-left: 3em;
+}
+ul ul ul li {
+	margin-left: 5em;
+}
+/*ordered lists*/
 ol {
 	margin-bottom: 1em;
 }
-
-ul li {
-
+ol ol li{
+	margin-left: 3em;
 }
-
-ol li {
-
+ol ol ol li {
+	margin-left: 5em;
 }
-
 
 /*TABLES*/
 table {
@@ -203,6 +206,16 @@ th {
 	border: 1px solid #fff;
 }
 
+.orangeColumns th {
+	background-color: #fd8a25;
+	color: #FFFFFF;
+}
+
+.orangeRows th {
+	background-color: #fd8a25;
+	color: #FFFFFF;
+}
+
 td {
 	color: #636363;
 	font-weight: 400;
@@ -213,7 +226,57 @@ td {
 	border: 1px solid #fff;
 }
 
-tr:nth-child(odd) {
+.rows tr:nth-child(odd) {
 	background-color: #eeeeee;
 }
+.rows tr:nth-child(even) {
+	background-color: #f8f8f8;
+}
+.columns td:nth-child(even) {
+	background-color: #eeeeee;
+}
+.columns td:nth-child(odd) {
+	background-color: #f8f8f8;
+}
 
+.orangeRows tr:nth-child(odd) {
+	background-color: #ffe8d3;
+}
+.orangeRows tr:nth-child(even) {
+	background-color: #fff6ee;
+}
+.orangeColumns td:nth-child(even){
+	background-color: #ffe8d3;
+}
+.orangeColumns td:nth-child(odd){
+	background-color: #fff6ee;
+}
+
+/*BUTTONS*/
+button {
+	font-size: 15px;
+	line-height: 40px;
+	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: none;
+	border:none;
+	box-shadow: none;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+}
+button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.primary {
+	background: #fd8a25;
+	background-color: #fd8a25;
+}
+
+.secondary {
+		border: 1px solid #fd8a25;
+		color: #fd8a25
+}

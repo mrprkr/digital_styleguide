@@ -8,8 +8,8 @@
 <body>
 	<div class="container">
 		<h4>Digital Styleguide</h4>
-		<p>We have prepared a digital styleguide to demonstrate the execusion of the visual language in HTML/CSS. <a download="stylesheet.css" target="_blank" href="stylesheet.css"> Download the CSS file</a></p>
-		<p>Dependancies: Font-Awesome see: <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Getting started</a>
+		<p>We have prepared a digital styleguide to demonstrate the execusion of the visual language in HTML/CSS. <a download="stylesheet.css" target="_blank" href="stylesheet.css"> <i class="fa fa-download"></i> Download the CSS</a></p>
+		<p>Dependancies: Font-Awesome see: <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Getting started with Font Awesome</a>
 	<br/>
 	<hr>
 	</div>
@@ -32,16 +32,18 @@
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	
+		<h4>Quick Links</h4>
 		<div class="quick-link">
 			<h2>Quick Link Header</h2>
-			<p class="breadcrumb"> my advice &gt; areas of advice &gt; wealth protection </p>
+			<p class="ql-breadcrumb"> my advice &gt; areas of advice &gt; wealth protection </p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 			</p>
 		</div>
 
 		<h4>Breadcrumb</h4>
 		<div class="breadcrumb">
-			<i class="fa fa-home fa-lg"></i>
+			<a href="#">
+			<i class="fa fa-home fa-lg"></i></a>
 			<span class="chevron right"></span>
 			<a href="#">Where you came from</a>
 			<span class="chevron right"></span>
@@ -54,6 +56,13 @@
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
+			<ul>
+				<li>Second tier list</li>
+				<li>And if you need one:</li>
+					<ul>
+						<li>Third Tier list like this</li>
+					</ul>
+			</ul>
 		</ul>
 
 		<p><strong> Ordered Lists: </strong></p>
@@ -61,10 +70,18 @@
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
+			<ol>
+				<li>Second tier list</li>
+				<li>And if you need one:</li>
+					<ol>
+						<li>Third Tier list like this</li>
+					</ol>
+			</ol>
 		</ol>
 
-		<h4>Tables</h4>
-		<table>
+		<h4>Table - Row Alternating</h4>
+		<p>Blue</p>
+		<table class="rows">
 			<th>Header 1</th>
 			<th>Header 2</th>
 			<th>Header 3</th>
@@ -94,6 +111,109 @@
 				<td>Cell 4 content goes here and wraps over a few lines</td>
 			</tr>
 		</table>
+
+		<h4>Table - Column Alternating </h4>
+		<p>Blue</p>
+		<table class="columns">
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+			<tr>
+				<td>The headers can also be be styled in orange</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines, but might be a little bit bigger than the surrounding cells. Everything top aligns and it reflows down keeping the headers all equal width.</td>
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+		</table>
+
+		<h4>Table - Row Alternating</h4>
+		<p>Orange</p>
+		<table class="rows orangeRows">
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+			<th>Header 4</th>
+			<tr>
+				<td>The headers can also be be styled in orange</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+				<td>Cell 4 content goes here and wraps over a few lines</td>
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines, but might be a little bit bigger than the surrounding cells. Everything top aligns and it reflows down keeping the headers all equal width.</td>
+				<td>Cell 4 content goes here and wraps over a few lines</td>
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+				<td>Cell 4 content goes here and wraps over a few lines</td>
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+				<td>Cell 4 content goes here and wraps over a few lines</td>
+			</tr>
+		</table>
+
+		<h4>Table - Column Alternating </h4>
+		<p>Orange</p>
+		<table class="columns orangeColumns">
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+			<tr>
+				<td>The headers can also be be styled in orange</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines, but might be a little bit bigger than the surrounding cells. Everything top aligns and it reflows down keeping the headers all equal width.</td>
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+			<tr>
+				<td>Cell 1 content goes here and wraps over a few lines</td>
+				<td>Cell 2 content goes here and wraps over a few lines</td>
+				<td>Cell 3 content goes here and wraps over a few lines</td>
+
+			</tr>
+		</table>
+
+<!-- 		<h4>Buttons</h4>
+		<form>
+			<button class="secondary">Secondary</button> 
+			<button class="primary">Primary</button>
+			<br/><br/>
+			<input type="checkbox" id="checkbox"><label for="checkbox">Checker</label>
+		</form> -->
 
 	</div>
 
