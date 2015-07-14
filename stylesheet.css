@@ -60,6 +60,16 @@ p {
 	margin-bottom: 0.5em;
 }
 
+a {
+	color: #ed7002;
+	text-decoration: none;
+	border-bottom: 2px solid #ed7002;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
 .quick-link {
 	display: block;
 	padding: 30px;
@@ -82,6 +92,16 @@ p {
 	text-transform: uppercase;
 	line-height: 1.2em;
 	margin-bottom: 1em;
+}
+
+.quick-link .breadcrumb a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.quick-link .breadcrumb a:hover {
+	opacity: 0.8;
 }
 
 .quick-link p {
