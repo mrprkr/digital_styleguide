@@ -1,0 +1,54 @@
+.container {
+	max-width: 500px;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', "Open Sans";
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 44px;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.4em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.4em;
+	margin-top: 0.8em;
+	margin-bottom: 1em;
+	color: #636363;
+	letter-spacing: 0.2px;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.4em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+p {
+	color: #111111;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.4em;
+	letter-spacing: 0.1px;
+}
