@@ -8,6 +8,11 @@
 	height: 300px;
 }
 
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -26,14 +31,15 @@ h2 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-bottom: 0.5em;
+	text-transform: capitalize;
 }
 
 h3 {
 	font-weight: 300;
 	font-size: 20px;
 	line-height: 1.4em;
-	margin-top: 0.8em;
-	margin-bottom: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	color: #636363;
 	letter-spacing: 0.2px;
 }
@@ -43,7 +49,7 @@ h4 {
 	font-size: 24px;
 	line-height: 1.4em;
 	margin-top: 2em;
-	margin-bottom: 1em;
+	margin-bottom: 0.6em;
 }
 
 p {
@@ -51,6 +57,5 @@ p {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.4em;
-	letter-spacing: 0.1px;
 	margin-bottom: 0.5em;
 }
